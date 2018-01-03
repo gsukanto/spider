@@ -1,0 +1,47 @@
+<config>
+    <ListenPort>8006</ListenPort>
+    <LogLevel>1</LogLevel>
+    <LogIDMethod>2</LogIDMethod>
+    <LogPath>./log/spider_server.log</LogPath>
+    <LogRotateInterval>86400</LogRotateInterval>
+    <LogSizeMax>2000000</LogSizeMax>
+    <LogCountMax>5</LogCountMax>
+    <LogRequest>true</LogRequest>
+
+    <UseNewLog>true</UseNewLog>
+    <NeedSqlLog>false</NeedSqlLog>
+
+    <ReadTimeout>5000</ReadTimeout>
+    <WriteTimeout>1000</WriteTimeout>
+
+
+    <LAZADA_LOGIN>https://www.lazada.co.id/customer/account/login/</LAZADA_LOGIN>
+    <LAZADA_LOGIN_SUCCESS>https://www.lazada.co.id/customer/account/</LAZADA_LOGIN_SUCCESS> 
+    <LAZADA_ACCOUNT>https://www.lazada.co.id/customer/account/edit/</LAZADA_ACCOUNT>    
+
+    <TOKO_LOGIN>https://www.tokopedia.com/login</TOKO_LOGIN>   
+    <TOKO_SUCCESS>https://www.tokopedia.com</TOKO_SUCCESS> 
+    <TOKO_ACCOUNT>https://www.tokopedia.com/people/%v/edit</TOKO_ACCOUNT> 
+    <TOKO_ADDRESS>https://www.tokopedia.com/people/%v/address</TOKO_ADDRESS> 
+
+    <ELE_LOGIN>http://www.elevenia.co.id/login</ELE_LOGIN>      
+    <ELE_LOGIN_REAL>https://www.elevenia.co.id/login.do?isSSL=Y</ELE_LOGIN_REAL> 
+    <ELE_ACCOUNT>"https://www.elevenia.co.id/register/memInfoEditForm/getMemberInfo.do?isSSL=Y&amp;CHOICEMENU=E01"</ELE_ACCOUNT>    
+    <ELE_ORDER>https://www.elevenia.co.id/order/BuyManager/getCancelRequestListAjax.do</ELE_ORDER>      
+
+    <BUKA_LOGIN>https://www.bukalapak.com/login</BUKA_LOGIN>   
+    <BUKA_SUCCESS>https://www.tokopedia.com</BUKA_SUCCESS> 
+
+    <BLIBLI_LOGIN>https://www.blibli.com/login</BLIBLI_LOGIN>      
+    <BLIBLI_USER_LOGIN>https://www.blibli.com/backend/common/users/_login</BLIBLI_USER_LOGIN> 
+    <BLIBLI_ORDER>https://www.blibli.com/member/order</BLIBLI_ORDER>      
+    <BLIBLI_PROFILE>https://www.blibli.com/member/profile</BLIBLI_PROFILE>    
+    <BLIBLI_ADDRESS>https://www.blibli.com/member/address</BLIBLI_ADDRESS>    
+
+    <BCA_LOGIN>https://ibank.klikbca.com/</BCA_LOGIN>   
+    <BCA_BALANCE>https://ibank.klikbca.com/balanceinquiry.do</BCA_BALANCE> 
+    <BCA_TRANS>https://ibank.klikbca.com/accountstmt.do?value(actions)=acctstmtview</BCA_TRANS>   
+
+
+</config>
+

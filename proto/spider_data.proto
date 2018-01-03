@@ -1,0 +1,50 @@
+package spider.data;
+
+message CrawParam
+{
+    required string  username   = 1;
+    required string  password   = 2;
+}
+
+message CrawResult 
+{
+    optional Account account = 1;
+    repeated Order  order_list = 2;
+    optional string platform = 3;
+    optional BCA    trans_his   = 4;
+}
+
+message Account
+{
+    optional string  name    = 1;
+    optional string  birth   = 2;
+    optional string  phone_number    = 3;
+    optional string  gender  = 4;
+    optional string  email = 5;
+    repeated string  address = 6;
+    repeated string  extral_info = 7;
+
+    optional string  account_number = 8;
+    optional string  account_type= 9;
+    optional string  currency = 10;
+    optional string  balance = 11;
+
+}
+
+message Order
+{
+    optional string  ordersn    = 1;
+    optional string  date       = 2;
+    optional string  amount     = 3;
+    optional string  status     = 4;
+    optional string  desc       = 5;
+    optional string  delivery   = 6;
+    repeated string  extral_info = 7;
+}
+
+message BCA
+{
+    repeated string  trans_history  = 6;
+    optional string  extinfo        = 7;
+}
+
